@@ -18,6 +18,8 @@ provider:
         - '*'
   environment: 
     PHONE_NUMBER: ${secrets:ALERT_NUMBER}
+  logs:
+    restApi: true
 
 functions:
   formSubmit:
